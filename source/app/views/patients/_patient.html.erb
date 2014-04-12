@@ -1,7 +1,14 @@
-<tr class="patient" id=<%="patient#{patient.id}"%> >
+<tr class="patient" id="<%="patient#{patient.id}"%>" >
   <td><%= patient.last %></td>
   <td><%= patient.first %></td>
-  <td><%= patient.medication_rate %><td>
-  <td><%= patient.exercise_rate %></td>
-  <td><%=patient.happiness_score %><td>
+  <%= patient_attribute(patient, :medication_rate) %>
+  <%= patient_attribute(patient, :exercise_rate) %>
+  <%= patient_attribute(patient, :happiness_score) %>
+  <td>
+    <button class="btn btn-primary" data-toggle="modal" data-target="<%="#message_dialog#{patient.id}"%>">
+      <span class="glyphicon glyphicon-send"></span>
+      Send Message
+    </button>
+    <%= render partial: "patients/message_dialog", locals: {patient: patient} %>
+  </td>
 </tr>
