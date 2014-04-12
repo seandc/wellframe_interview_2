@@ -5,9 +5,18 @@
   <tr>
     <th>Last Name</th>
     <th>First Name</th>
-    <th>Medication Rate</th>
-    <th>Exercise Rate</th>
-    <th>Happiness</th>
+    <th>
+      Medication Rate
+      <span class="glyphicon glyphicon-info-sign" data-toggle="tooltip" title="The number of times the patient has actually taken their medication divided by the expected number of times." data-placement="top"></span>
+    </th>
+    <th>
+      Exercise Rate
+      <span class="glyphicon glyphicon-info-sign" data-toggle="tooltip" title="The number of times the patient has actually exercised divided by the expected number of times." data-placement="top"></span>
+    </th>
+    <th>
+      Happiness
+      <span class="glyphicon glyphicon-info-sign" data-toggle="tooltip" title="The patient's self-reported happiness on a scale from 1 to 5, 5 being the most happy." data-placement="top"></span>
+    </th>
     <th>Action</th>
   </tr>
   <%= render @patients %>
