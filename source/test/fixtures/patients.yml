@@ -1,15 +1,34 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  first: MyString
-  last: MyString
-  medication_rate: 9.99
-  exercise_rate: 9.99
-  happiness_score: 1
+  first: Garry
+  last: Dermott
+  medication_rate: .5
+  exercise_rate: .75
+  happiness_score: 3
 
 two:
-  first: MyString
-  last: MyString
-  medication_rate: 9.99
-  exercise_rate: 9.99
+  first: Belinda
+  last: Pontecorvo
+  medication_rate: .99
+  exercise_rate: .80
+  happiness_score: 4
+
+
+three:
+  first: Josh 
+  last: Wilkie
+  medication_rate: .23
+  exercise_rate: .11
   happiness_score: 1
+
+four:
+  first: Constance 
+  last: Macey
+  medication_rate: .2
+  exercise_rate: .99
+  happiness_score: 5
+
+
+
+

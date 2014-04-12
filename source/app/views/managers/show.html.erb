@@ -1,0 +1,11 @@
+<h1> <%= @manager.name %> </h1>
+
+<h1> Active Patients </h1>
+<table>
+  <th>Last Name</th>
+  <th>First Name</th>
+  <th>Medication Rate<th>
+  <th>Excercise Rate</th>
+  <th>Happiness<th>
+  <%= render @patients %>
+</table>
