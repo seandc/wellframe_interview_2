@@ -21,6 +21,14 @@ class PatientStatHelper
     end
   end
 
+  # The patient score is simply the sum of the attribute scores.
+  # This can be used to sort patients by need.
+  def patient_score
+    @@thresholds.keys.inject(0) do |accu, attribute|
+      accu + self.send("#{attribute}_score")
+    end
+  end
+
   def initialize(patient)
     @patient = patient
   end
